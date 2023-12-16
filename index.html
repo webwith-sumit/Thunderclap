@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -98,12 +100,10 @@
                         <button>START A PROJECT</button>
                     </div>
                 </div>
-
-                <video autoplay muted loop src="videos/hero-video.webm"></video>
-
+                <video autoplay muted loop src="/videos/hero-video.mp4"></video>
                 <div class="circle">
-                    <img class="text" src="/explore work.svg" alt="">
-                    <img class="arrow" src="/down arrow.svg" alt="">
+                    <img class="text" src="https://assets-global.website-files.com/647a44d46bd489f738cd8d26/647df1dedbd96d70fb0bd0a6_Group%20100761.svg" alt="">
+                    <img class="arrow" src="https://assets-global.website-files.com/647a44d46bd489f738cd8d26/647df2463ef45b0bd46a5655_Group%20100744.svg" alt="">
                 </div>
             </div>
         </div>
@@ -117,7 +117,7 @@
             </div>
             <div class="boxcontainer">
                 <div class="row1">
-                    <div class="boxes">
+                    <div  id="b1" class="boxes">
                         <div class="imgbox">
                             <video autoplay muted loop src="videos/video01.mp4"></video>
                             <img src="https://assets-global.website-files.com/647a44d46bd489f738cd8d26/6490a79fc8e5ab7003c01079_Group%20100754-p-1080.png"
@@ -128,7 +128,7 @@
                             Transforming metabolic disease treatment through pioneering solutions.
                         </p>
                     </div>
-                    <div class="boxes">
+                    <div id="b3" class="boxes b3">
                         <div class="imgbox">
                             <video autoplay muted loop src="videos/Video02.mp4"></video>
                             <img src="https://assets-global.website-files.com/647a44d46bd489f738cd8d26/6490a79db90ffbcead8cfde6_Group%20100818.png"
@@ -140,7 +140,7 @@
                             Build real-time data apps & services. Fast.
                         </p>
                     </div>
-                    <div class="boxes">
+                    <div id="b5" class="boxes">
                         <div class="imgbox">
                             <video autoplay muted loop src="videos/video03.mp4"></video>
                             <img src="https://assets-global.website-files.com/647a44d46bd489f738cd8d26/6490a42c532e88cbf639fc22_Group%20100819.png"
@@ -153,7 +153,7 @@
                     </div>
                 </div>
                 <div class="row2">
-                    <div class="boxes">
+                    <div  id="b2" class="boxes">
                         <div class="imgbox">
                             <video autoplay muted loop src="videos/video04.mp4"></video>
                             <img src="https://assets-global.website-files.com/647a44d46bd489f738cd8d26/6490a79ef743dd781e8f3a6f_Group%20100816.png"
@@ -164,7 +164,7 @@
                             Fastest way to standardize metrics and start finding insights in your data.
                         </p>
                     </div>
-                    <div class="boxes">
+                    <div id="b4" class="boxes">
                         <div class="imgbox">
                             <video autoplay muted loop src="videos/video05.mp4"></video>
                             <img src="https://assets-global.website-files.com/647a44d46bd489f738cd8d26/6490a79eadb6c81b5d12d3ce_Group%20100817.png"
@@ -176,7 +176,7 @@
                             The most popular open source Graph database in the world.
                         </p>
                     </div>
-                    <div class="boxes">
+                    <div id="b6" class="boxes">
                         <div class="imgbox">
                             <video autoplay muted loop src="videos/video06.mp4"></video>
                             <img src="https://assets-global.website-files.com/647a44d46bd489f738cd8d26/6490a42bc3ccff898f2306d7_Group%20100820.png"
@@ -194,23 +194,68 @@
         </div>
         <div id="page3">
             <h1>What Our Clients say about Us</h1>
-            <div class="rect">
-                <div class="header">
-                    <div class="imgbox">
-                        <img src="https://assets-global.website-files.com/647a44d46bd489f738cd8d26/648a50d40cb839f44d7ac297_Ellipse%20185.png"
-                            alt="">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="rect">
+                            <div class="header">
+                                <div class="imgbox">
+                                    <img src="https://assets-global.website-files.com/647a44d46bd489f738cd8d26/648a50d40cb839f44d7ac297_Ellipse%20185.png"
+                                        alt="">
+                                </div>
+                                <h3>Harshita Gupta</h3>
+                                <h4>Co-founder, The CEO Rally</h4>
+                            </div>
+                            <div class="para">
+                                <p>"Working with ThunderClap was truly great. The website was
+                                    developed so well that after the initial launch, we were able to
+                                    build new pages simply by duplicating the existing sections. And
+                                    we were truly able to own the project."</p>
+                            </div>
+                        </div>
                     </div>
-                    <h3>Harshita Gupta</h3>
-                    <h4>Co-founder, The CEO Rally</h4>
+                    <div class="swiper-slide">
+                        <div class="rect">
+                            <div class="header">
+                                <div class="imgbox">
+                                    <img src="https://assets-global.website-files.com/647a44d46bd489f738cd8d26/648a50d40cb839f44d7ac297_Ellipse%20185.png"
+                                        alt="">
+                                </div>
+                                <h3>Harshita Gupta</h3>
+                                <h4>Co-founder, The CEO Rally</h4>
+                            </div>
+                            <div class="para">
+                                <p>"Working with ThunderClap was truly great. The website was
+                                    developed so well that after the initial launch, we were able to
+                                    build new pages simply by duplicating the existing sections. And
+                                    we were truly able to own the project."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="rect">
+                            <div class="header">
+                                <div class="imgbox">
+                                    <img src="https://assets-global.website-files.com/647a44d46bd489f738cd8d26/648a50d40cb839f44d7ac297_Ellipse%20185.png"
+                                        alt="">
+                                </div>
+                                <h3>Harshita Gupta</h3>
+                                <h4>Co-founder, The CEO Rally</h4>
+                            </div>
+                            <div class="para">
+                                <p>"Working with ThunderClap was truly great. The website was
+                                    developed so well that after the initial launch, we were able to
+                                    build new pages simply by duplicating the existing sections. And
+                                    we were truly able to own the project."</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="para">
-                    <p>"Working with ThunderClap was truly great. The website was
-                        developed so well that after the initial launch, we were able to
-                        build new pages simply by duplicating the existing sections. And
-                        we were truly able to own the project."</p>
-                </div>
+                <div class="swiper-button-next arrow"></div>
+                <div class="swiper-button-prev arrow"></div>
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="navigation">
+            <!-- <div class="navigation">
                 <div class="box1">
                     <h3>
                         < </h3>
@@ -221,7 +266,7 @@
                 <div class="box1">
                     <h3>></h3>
                 </div>
-            </div>
+            </div> -->
             <div class="overlay2"></div>
             <svg width="100%" height="100%" viewBox="0 0 216 288" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_1306_4254)">
@@ -248,12 +293,12 @@
         <div id="page4">
             <div class="header3">
                 <div class="boxleft">
-                    <h1>Things we can
-                        do for you! </h1>
+                    <h1>Things we can</h1>
+                       <h1>do for you! </h1>
                 </div>
                 <div class="boxright">
-                    <p>We are PROs in the entire website creation process. We do
-                        webflow development, migration, re-brand, or web design.</p>
+                    <p>We are PROs in the entire website creation process. We do</p>
+                    <p>webflow development, migration, re-brand, or web design.</p>
                     <button>
                         LET'S TALK
                     </button>
@@ -274,39 +319,39 @@
                     style="opacity: 1;"></rect>
             </svg>
             <div class="container2">
-                <div class="rect2">
+                <div class="rect2 lbox1">
                     <div class="lbox">
                         <video autoplay muted loop src="videos/webflow-development.mp4"></video>
                     </div>
                     <div class="rbox">
                         <h2>Webflow Development</h2>
-                        <p>We build highly scalable and easy-to-manage
-                            webflow websites. Send us your designs and we
-                            will build you a pixel-perfect website.</p>
+                        <p>We build highly scalable and easy-to-manage</p>
+                        <p>websites. Send us your designs and we
+                        <p> will build you a pixel-perfect website.</p>
                     </div>
                 </div>
-                <div class="rect2">
+                <div class="rect2 lbox2">
                     <div class="lbox">
                         <video autoplay muted loop src="videos/Webflow-maintaince-video.mp4"></video>
                     </div>
                     <div class="rbox">
                         <h2>Webflow Maintenance</h2>
-                        <p>Already have a webflow website and need
-                            someone to support your company’s growth? Our
-                            webflow pros can help grow and maintain your
-                            webflow project.</p>
+                        <p>Already have a webflow website and need</p>
+                        <p>someone to support your company’s growth? Our</p>
+                        <p>webflow pros can help grow and maintain your</p>
+                        <p>webflow project.</p>
                     </div>
                 </div>
-                <div class="rect2">
+                <div class="rect2 lbox3">
                     <div class="lbox">
                         <video autoplay muted loop src="videos/design-video.mp4"></video>
                     </div>
                     <div class="rbox">
                         <h2>Brand & Web Design</h2>
-                        <p>We offer world-class web design and branding
-                            services but…With a limited project capacity. If
-                            you have a design project, let's chat and see if we
-                            can help bring your vision to life.</p>
+                        <p>We offer world-class web design and branding</p>
+                        <p>services but…With a limited project capacity. If</p>
+                        <p>you have a design project, let's chat and see if we</p>
+                        <p>can help bring your vision to life.</p>
                     </div>
                 </div>
                 <svg width="100%" height="100%" viewBox="0 0 144 216" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -336,9 +381,9 @@
                         alt="">
                 </div>
                 <div class="rbox1">
-                    <h1>Interested in seeing
-                        what we can do for
-                        your website?</h1>
+                    <h1>Interested in seeing</h1>
+                    <h1>what we can do for</h1>
+                    <h1>your website?</h1>
                     <h5>Contact us to learn more about our Webflow services.</h5>
                     <button>LET'S TALK -></button>
                 </div>
@@ -408,5 +453,11 @@
             <h4>© 2023 — ThunderClap. All rights reserved.</h4>
         </div>
     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js" integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js" integrity="sha512-LQQDtPAueBcmGXKdOBcMkrhrtqM7xR2bVrnMtYZ8ImAZhFlIb5xrMqQ6uZviyeSB+4mYj89ta8niiCIQM1Gj0w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
 </body>
 </html>

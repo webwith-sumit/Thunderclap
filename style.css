@@ -44,7 +44,8 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 2vw 0vw;
-    animation: opacity 1s .5s ease both;
+    position: relative ;
+    /* animation: opacity 1s .5s ease both; */
 }
 @keyframes opacity{
     from{
@@ -81,7 +82,7 @@ body {
     font-size: 1.2vw;
     font-weight: 400;
     cursor: pointer;
-    transition: all ease .2s;
+    transition: color ease .2s;
 }
 
 #navbar h3:hover,
@@ -92,7 +93,7 @@ i:hover {
 
 button {
     cursor: pointer;
-    transition: all ease .2s;
+    transition: color ease .2s;
 }
 
 #navbar .nav i {
@@ -135,7 +136,7 @@ button {
 }
 span{
     display: inline-block;
-    animation: pushup 1.5s 1s ease 1 both;
+    /* animation: pushup 1.5s 1s ease 1 both; */
 }
 
 .head1{
@@ -165,6 +166,9 @@ span{
     font-weight: 300;
     line-height: 28px;
 }
+.para1 span{
+    display: inline-block;
+}
 .para1 .line1{
     animation-delay: 2.2s;
 }
@@ -185,11 +189,11 @@ span{
     border-radius: 5px;
     font-size: 1.2vw;
     margin-top: 2vw;
-    animation: pushup 1.5s 3s ease both;
+    /* animation: pushup 1.5s 3s ease both; */
 }
 
 #page1 video{
-    animation: pushup 1.5s 3.5s linear both;
+    /* animation: pushup 1.5s 3.5s linear both; */
     width: 50vw;
 }
 
@@ -201,18 +205,8 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: scale .7s 4.5s ease 1 both;
+    /* animation: scale .7s 4.5s ease 1 both; */
 
-}
-@keyframes scale{
-    from{
-        opacity: 0;
-        scale: 0.5;
-    }
-    to{
-        opacity: 1;
-        scale: 1;
-    }
 }
 .circle .text {
     width: 100%;
@@ -303,7 +297,7 @@ span{
     width: 100%;
     height: 100%;
     border-radius: 5px;
-    transition: all ease .2s;
+    transition: opacity ease .2s;
 }
 
 .boxes .imgbox video {
@@ -318,17 +312,9 @@ span{
 }
 
 #page2 .imgbox img:hover {
-    background-color: #1A2327;
     opacity: 0;
     cursor: pointer;
 }
-
-#page2 .imgbox img:hover {
-    background-color: #1A2327;
-    opacity: 0;
-    cursor: pointer;
-}
-
 .boxes h1 {
     font-size: 3.5vw;
     font-weight: 500;
@@ -404,7 +390,7 @@ span{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0vw 5vw;
+    /* padding: 0vw 5vw; */
     padding-top: 16vw;
     gap: 2vw;
     position: relative;
@@ -423,14 +409,59 @@ span{
     font-weight: 400;
 }
 
+.swiper {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    overflow: visible !important;
+    overflow-x: hidden !important;
+}
+.swiper{
+    touch-action: pan-y;
+  }
+
+.swiper-slide {
+    transition: scale ease .2s !important;
+    height: 90vh !important;
+    width: 80vw !important;
+    text-align: center;
+    font-size: 18px;
+    /* background: #E7F6EA; */
+    display: flex !important;
+    justify-content: center;
+    align-items: center ;
+
+}
+.swiper-slide-prev,.swiper-slide-next{
+    scale: .9;
+    
+}
+.arrow{
+    padding: 0vw 12vw !important;
+}
+.arrow::after {
+    background-color: #D0EDD6;
+    position: absolute;
+    top: 21vw;
+    padding: 1.2vw;
+    scale: .8;
+    color: #000;
+}
+.swiper-pagination{
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    padding: 1.6vw 0vw;
+    width: 69vw !important;
+    background-color: #D0EDD6;
+}
 #page3 .rect {
     background-color: #D0EDD6;
     width: 78vw;
+    /* margin-left: 20vw; */
     padding: 6vw;
     display: flex;
     flex-direction: column;
     gap: 1.5vw;
-    margin-top: 5vw;
     position: relative;
     z-index: 99;
 }
@@ -580,6 +611,7 @@ span{
 
 .lbox video {
     width: 40vw;
+    display: inline-block;
 }
 
 .rbox {
@@ -588,20 +620,20 @@ span{
     flex-direction: column;
     justify-content: center;
     padding: 5vw;
-
 }
 
 .rbox h2 {
     font-size: 3vw;
     font-weight: 400;
+    padding-bottom: 1vw;
 }
 
-.rbox p {
+.rbox p{
     font-weight: 300;
-    line-height: 3vw;
+    line-height: 2.5vw;
     width: 30vw;
-    font-size: 1.2vw;
-    padding-top: 1vw;
+    font-size: 1.3vw;
+    /* padding-top: 1vw; */
 }
 
 .container2>svg {
