@@ -136,7 +136,7 @@ button {
 }
 span{
     display: inline-block;
-    /* animation: pushup 1.5s 1s ease 1 both; */
+    
 }
 
 .head1{
@@ -211,11 +211,13 @@ span{
 .circle .text {
     width: 100%;
     animation: loopcircle 10s linear infinite both;
+    position: relative;
+    z-index: -1;
 }
 
 .arrow {
-    width: 4vw;
     position: absolute;
+    z-index: 9;
 }
 
 @keyframes loopcircle {

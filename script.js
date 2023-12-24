@@ -1,32 +1,33 @@
 var tm = gsap.timeline()
 tm
-.from(" #navbar ", {
+.from(" #navbar", {
     y : "-50%" ,
     opacity : 0,
-    duration : 1.1,
+    duration : .7,
     delay : .5,
 })
 .from("#page1 h1 span",{
     y  : "100%",
     opacity : 0,
-    duration : 1,
+    duration : .7,
     stagger : .2,
-})
+}, "b")
 .from(".container .leftbox span, .leftbox button", {
     y : 50,
     opacity : 0,
+    delay : .5,
     // duration : 1,
     stagger : .1,
-})
+},"b")
 .from("#page1>svg rect",{
     opacity : 0,
-    stagger : .2,
+    stagger : .15,
     duration : 1,
 }, "a")
 .from(".container video",{
     y  : "50%",
     opacity : 0,
-    duration : 1.5,
+    duration : 1.2,
 }, "a")
 .from(".container .circle",{
     scale : 0,
